@@ -20,6 +20,8 @@ services:
     image: nextcloud
     container_name: nextcloud
     restart: always
+    ports:
+      - 290:80    #A REMPLACER LE 290
     links:
       - dbnextcloud
     volumes:
