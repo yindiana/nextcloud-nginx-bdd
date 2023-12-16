@@ -43,6 +43,9 @@ services:
      - MYSQL_USER=$MYSQL_USER  # Nom de l'utilisateur de la base de données créée
      - MYSQL_PASSWORD=$MYSQL_PASSWORD  # Mot de passe de l'utilisateur créé  
 
+#Default Admin User:
+#Email:    admin@example.com
+#Password: changeme
   reverseproxy:
     image: 'jc21/nginx-proxy-manager:latest'
     container_name: nginx
