@@ -1,3 +1,5 @@
+#PREREQUIS
+#Lancer le script volume_creation.sh avant de déployer la stack, ça va créer les volumes nécessaires
 version: '3'
 
 services:
