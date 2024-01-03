@@ -28,7 +28,7 @@ services:
       - /opt/nextcloud/html:/var/www/html
     environment:
      - DB_MYSQL_HOST=$HOSTNAME_DATABASE
-     - DMYSQL_USER=$MYSQL_USER  # Nom de l'utilisateur de la base de données créée
+     - MYSQL_USER=$MYSQL_USER  # Nom de l'utilisateur de la base de données créée
      - MYSQL_PASSWORD=$MYSQL_PASSWORD  # Mot de passe de l'utilisateur créé
      - MYSQL_DATABASE=$MYSQL_DATABASE  # Nom de la base de données à créer à l'initialisation du conteneur
   
@@ -61,7 +61,7 @@ services:
     environment:
      - DB_MYSQL_HOST=$HOSTNAME_DATABASE
      - DB_MYSQL_PORT=3306
-     - DMYSQL_USER=$MYSQL_USER  # Nom de l'utilisateur de la base de données créée
+     - MYSQL_USER=$MYSQL_USER  # Nom de l'utilisateur de la base de données créée
      - MYSQL_PASSWORD=$MYSQL_PASSWORD  # Mot de passe de l'utilisateur créé
      - MYSQL_DATABASE=$MYSQL_DATABASE  # Nom de la base de données à créer à l'initialisation du conteneur
     volumes:
